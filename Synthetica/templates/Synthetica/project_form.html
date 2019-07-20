@@ -1,6 +1,5 @@
 {% extends "base_generic.html" %}
 
-
 {% load staticfiles %}
 
 {% block title %}
@@ -15,12 +14,25 @@
 <form action="" method="post">
     {% csrf_token %}
 
-    {% for field in form.visible_fields %}
-    <div class="form-group">
-      {{ field.label_tag }}
-      {{ field }}
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                {{ form.project_name.label_tag }}
+                {{ form.project_name }}
+            </div>
+            <div class="form-group">
+                {{ form.records.label_tag }}
+                {{ form.records }}
+            </div>            
+        </div>
+        <div class="col">
+            <div class="form-group">
+                {{ form.description.label_tag }}
+                {{ form.description }}
+            </div>
+        </div>
     </div>
-    {% endfor %}
+
     <div class="table-responsive">
         <table class="table">
             {{ generate.management_form }}

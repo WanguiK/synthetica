@@ -34,7 +34,7 @@ GenerateFormSet = inlineformset_factory(
         'options': Textarea(
             attrs={'class':'form-control lato form-control-lg',
             'cols':15,
-            'rows':4}
+            'rows':3}
         ),
     }
 )
