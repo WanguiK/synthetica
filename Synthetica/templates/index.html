@@ -1,0 +1,58 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <meta name="robots" content="index, follow"> -->
+    <!-- <meta http-equiv="cache-control" content="public"> -->
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="{% static 'images/purple-logo.png' %}">
+
+    <link rel="shortcut icon" href="{% static 'images/purple-logo.png' %}" type="image/png">
+    <title>Synthetica</title>
+
+    <!--Import Bootstrap CSS-->
+    <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" media="screen,projection" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+
+</head>
+
+<body>
+
+<div class="h-100 w-100 text-center flex-column d-flex align-items-center justify-content-center">
+    <img src="{% static 'images/white-logo.png' %}" alt="Synthetica Logo"/>
+    <h1 class="julius text-white">Synthetica</h1>
+    <div class="spinner-grow text-white" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+   
+
+
+<!-- =============JavaScript=================== -->
+<!-- JQuery  -->
+<script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+
+<!-- Popper JS -->
+<script src="{% static 'js/popper.min.js' %}"></script>
+
+<!-- Bootstrap JS -->
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- JavaScript -->
+<script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>
