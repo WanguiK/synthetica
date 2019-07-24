@@ -2,11 +2,6 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator 
 from django.urls import reverse
 
-# from django.forms import ModelForm
-# from django.shortcuts import redirect
-# from django import forms
-# from itertools import islice
-
 
 
 class Project(models.Model):
@@ -26,7 +21,8 @@ class Project(models.Model):
         return f'{self.id} ({self.project_name})'
 
     def get_absolute_url(self):
-        return reverse('workspace')
+        # return reverse('workspace')
+        return reverse('generate', args=[str(self.id)])
 
 
 

@@ -48,3 +48,15 @@ class ProjectGenerateCreate(CreateView):
                 generate.instance = self.object
                 generate.save()
         return super(ProjectGenerateCreate, self).form_valid(form)
+
+from django.shortcuts import get_object_or_404
+
+def generate(request, pk):
+    project_instance = get_object_or_404(Project, pk=pk)
+    meta_filter = Generate.objects.filter(project_id = project_instance).values_list('field_name', 'data_type', 'options').distinct()
+    metadata = list(meta_filter)
+    meta = list(metadata[0])
+    context = {
+        'metadata':meta,
+    }
+    return render(request, 'generation.html', context)

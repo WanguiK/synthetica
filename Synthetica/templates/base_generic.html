@@ -27,8 +27,9 @@
     <!-- Fontawesome -->
     <link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet">
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <!-- Custom styles -->   
+    {% block custom_css %}{% endblock custom_css %}
+        
 
 </head>
 
