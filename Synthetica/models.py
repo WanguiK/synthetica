@@ -33,24 +33,55 @@ class Generate(models.Model):
 
     field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
 
+    # DATA_TYPES = (
+    #     ('t', 'Short Text'),
+    #     ('n', 'Numeric'),
+    #     ('a', 'Alphanumeric'),
+    #     ('lt', 'Long Text'),
+    #     ('d', 'Date',),
+    #     ('ti', 'Time'),
+    #     ('dti', 'Date & Time')
+    # )
+
     DATA_TYPES = (
-        ('t', 'Short Text'),
-        ('n', 'Numeric'),
-        ('a', 'Alphanumeric'),
-        ('lt', 'Long Text'),
-        ('d', 'Date',),
-        ('ti', 'Time'),
-        ('dti', 'Date & Time')
+        ('sex', 'Gender'),
+        ('age', 'Age'),
+        ('address', 'Address'),
+        ('pstatus', 'Parents Cohabitation'),
+        ('medu', 'Mothers Education'),
+        ('mjob', 'Mothers Job'),
+        ('fedu', 'Fathers Education'),
+        ('fjob', 'Fathers Job'),
+        ('guardian', 'Guardian'),
+        ('famsize', 'Family Size'),
+        ('famrel', 'Family Relationships'),
+        ('reason', 'Reason'),
+        ('traveltime', 'Travel Time'),
+        ('studytime', 'Study Time'),
+        ('failures', 'Failures'),
+        ('schoolsup', 'School Support'),
+        ('famsup', 'Family Support'),
+        ('activities', 'Extra-Curricular'),
+        ('paidclass', 'Paid Classes'),
+        ('internet', 'Internet Access'),
+        ('freetime', 'Free Time'),
+        ('walc', 'Weekend Alcohol'),
+        ('dalc', 'Workday Alcohol'),
+        ('health', 'Health'),
+        ('absences', 'Absences'),
+        ('g1', 'G1'),
+        ('g2', 'G2'),
+        ('g3', 'G3')
     )
 
     data_type = models.CharField(
         'Data Type',
-        max_length = 3,
+        max_length = 10,
         choices = DATA_TYPES,
         blank = True,
-        default = 't',
+        default = 'sex',
     )
-    options = models.TextField('Options', max_length=100, blank=True, default='car, shoe, tree')
+    options = models.TextField('Options', max_length=100, blank=True, default='Male, Female')
 
     # def get_absolute_url(self):
     #     return reverse('generate', args=[str(self.id)])

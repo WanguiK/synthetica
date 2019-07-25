@@ -53,10 +53,18 @@ from django.shortcuts import get_object_or_404
 
 def generate(request, pk):
     project_instance = get_object_or_404(Project, pk=pk)
-    meta_filter = Generate.objects.filter(project_id = project_instance).values_list('field_name', 'data_type', 'options').distinct()
-    metadata = list(meta_filter)
-    meta = list(metadata[0])
+    where = Generate.objects.filter(project_id = project_instance).values_list('field_name', 'data_type', 'options')
+    field_data = list(where)
+    meta_data = []
+
+    for val in field_data: 
+        convert = list(val)
+        meta_data.append(convert)
+        print(meta_data)
+
+    count = len(meta_data)
     context = {
-        'metadata':meta,
+        'metadata':meta_data,
+        'count':count
     }
     return render(request, 'generation.html', context)
