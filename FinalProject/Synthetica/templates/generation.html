@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% load staticfiles %}
+
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+{% endblock custom_css %}
+    
+
+{% block title %}
+<title>Generation | Synthetica</title>
+{% endblock title %}
+
+{% block windowname %}
+<h3 class="muli text-white">Generated Dataset</h3>
+{% endblock windowname %}
+
+
+{% block content %}
+{{ showtable |safe }}
+{% endblock content %}
+    
