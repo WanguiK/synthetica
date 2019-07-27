@@ -15,7 +15,7 @@ class ProjectForm(ModelForm):
 class GenerateForm(ModelForm):
     class Meta:
         model = Generate
-        fields = ['field_name', 'data_type', 'options']
+        fields = ['data_type', 'field_name', 'options']
 
 
 

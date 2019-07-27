@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de70a33c-d998-426d-9af3-876c041dae11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/components/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/components/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/attribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/circus.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/circus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/clock.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/clock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/operations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/population.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/random_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/random_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/relationship.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/relationship.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/story.py" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/Synthetica/trumania/trumania/core/story.py" afterDir="false" />
-    </list>
+    <list default="true" id="de70a33c-d998-426d-9af3-876c041dae11" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +9,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/FinalProject/Synthetica/trumania" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OWYMi26tXYmBt5ygJ2L7EnCmDi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -61,6 +52,7 @@
       <workItem from="1564094779059" duration="1326000" />
       <workItem from="1564096195276" duration="785000" />
       <workItem from="1564098442164" duration="2982000" />
+      <workItem from="1564242283829" duration="1596000" />
     </task>
     <servers />
   </component>
@@ -72,7 +64,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

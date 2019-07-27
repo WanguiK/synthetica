@@ -48,7 +48,7 @@ class ProjectGenerateCreate(CreateView):
 def generate(request, pk):
     project_instance = get_object_or_404(Project, pk=pk)
     records = project_instance.records
-    where = Generate.objects.filter(project_id = project_instance).values_list('field_name', 'data_type', 'options')
+    where = Generate.objects.filter(project_id = project_instance).values_list('data_type', 'field_name', 'options')
     field_data = list(where)
     meta_data = []
     for val in field_data: 

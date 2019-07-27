@@ -3,8 +3,16 @@
 {% load staticfiles %}
 
 {% block custom_css %}
-<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+<link rel="stylesheet" href="{% static 'css/generation.css' %}" />
 {% endblock custom_css %}
+
+{% block htmltocsvjs %}
+<script src="{% static 'js/htmltocsv.js' %}"></script>
+{% endblock htmltocsvjs %} 
+
+{% block customjs %}
+<script src="{% static 'js/generation.js' %}"></script>   
+{% endblock customjs %}
     
 
 {% block title %}
@@ -17,6 +25,13 @@
 
 
 {% block content %}
-{{ showtable |safe }}
+<p class="lato float-left">Download the dataset as a .csv file:</p>
+<button type="button" id="export" data-export="export" class="btn btn-lg text-white muli float-right">
+    <i class="fas fa-file-download"></i>
+    Download
+</button>
+<div class="table-responsive">
+    {{ showtable |safe }}
+</div>
 {% endblock content %}
     

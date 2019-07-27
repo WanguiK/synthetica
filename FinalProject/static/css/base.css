@@ -109,6 +109,12 @@ input, textarea, select {
     width: 170px;
 }
 
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 a.add-row {
     color: inherit !important;
     text-decoration: none !important;

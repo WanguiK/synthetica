@@ -33,18 +33,21 @@ def create_student_population(the_circus, size, metadata = []):
         ids_gen = SequencialGenerator()
     )
     length = len(metadata)
+    opt = []
     for i in range(length):
-        if metadata[i][1] in choices:
-            opt = metadata[i][2].split (",")
+        opt = metadata[i][2].replace(' ','')
+        opt = opt.split (",")
+        title = metadata[i][1]
+        if metadata[i][0] in choices:
             name = 'gen' + str(i)
             name = NumpyRandomGenerator(
                 method = "choice",
                 a = opt,
                 seed = next(the_circus.seeder)
             )
-            student.create_attribute(metadata[i][0], init_gen = name)
-        elif metadata[i][1] in randint:
-            opt = metadata[i][2].split (",")
+        elif metadata[i][0] in randint:
+            for i in range(0, len(opt)): 
+                opt[i] = int(opt[i])
             name = 'gen' + str(i)
             name = NumpyRandomGenerator(
                 method = "randint",
@@ -52,7 +55,7 @@ def create_student_population(the_circus, size, metadata = []):
                 high = max(opt),
                 seed = next(the_circus.seeder)
             )
-            student.create_attribute(metadata[i][0], init_gen = name)
+        student.create_attribute(title, init_gen = name)
     table = tabulate (
             student.to_dataframe(),
             headers='keys', 

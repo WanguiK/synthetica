@@ -31,18 +31,6 @@ class Generate(models.Model):
 
     project_id = models.ForeignKey(Project, 'Project ID', null=True)
 
-    field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
-
-    # DATA_TYPES = (
-    #     ('t', 'Short Text'),
-    #     ('n', 'Numeric'),
-    #     ('a', 'Alphanumeric'),
-    #     ('lt', 'Long Text'),
-    #     ('d', 'Date',),
-    #     ('ti', 'Time'),
-    #     ('dti', 'Date & Time')
-    # )
-
     DATA_TYPES = (
         ('sex', 'Gender'),
         ('age', 'Age'),
@@ -81,6 +69,9 @@ class Generate(models.Model):
         blank = True,
         default = 'sex',
     )
+
+    field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
+    
     options = models.TextField('Options', max_length=100, blank=True, default='Male, Female')
 
     # def get_absolute_url(self):

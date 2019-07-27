@@ -10,7 +10,6 @@ $( document ).ready(function() {
 
     var delete_icon = '<i class="far fa-3x gradient fa-times-circle text-center"></i>';
 
-
     $('.formset_row').formset({
         addText: add_icon,
         deleteText: delete_icon,
@@ -18,6 +17,5 @@ $( document ).ready(function() {
     });
 
     $('.add-row').addClass('muli');
-
 
 });

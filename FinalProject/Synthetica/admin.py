@@ -10,4 +10,4 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Generate)
 class GenerateAdmin(admin.ModelAdmin):
-    list_display = ('id', 'project_id', 'field_name', 'data_type', 'options')
+    list_display = ('id', 'project_id', 'data_type','field_name', 'options')

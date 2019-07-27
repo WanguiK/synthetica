@@ -1,7 +1,8 @@
 $( document ).ready(function() {
 
     setTimeout(function(){
-        window.location.href = 'http://127.0.0.1:8000/synthetica/workspace/';
+        // window.location.href = 'http://127.0.0.1:8000/synthetica/workspace/';
+        window.location.href = 'http://syntheticaa.herokuapp.com/synthetica/workspace/';
     }, 8000);
 
     $('input[type=text]:nth-child(2)').addClass('form-control');

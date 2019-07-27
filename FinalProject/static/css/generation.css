@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:300|Muli&display=swap');
+
+html, body {
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(to right, #76347a, #76347a, #db497d); 
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #505050; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212121; 
+}
+/* END OF SCROLLBAR */
+
+
+/* FONTS */
+.lato {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.muli {
+    font-family: 'Muli', sans-serif;
+}
+
+.julius {
+    font-family: 'Julius Sans One', sans-serif;
+}
+/* END OF FONTS */
+
+h1 {
+    text-shadow: 4px 2px 5px #000000;
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+.whole {
+    padding: 0;
+    margin: 2% 15%;
+    width: auto;
+}
+
+.window {
+    height: 710px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.window section {
+    padding: 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(to left, #76347a, #76347a, #db497d);
+}
+
+.content {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 1.2em;
+    padding-bottom: 1.2em;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 595px;
+}
+
+
+/* FORMS */
+table {
+    font-size: 18px;
+}
+
+.download {
+    padding-bottom: 10px !important;
+}
+
+.btn {
+    background-image: linear-gradient(to left, #76347a, #76347a, #db497d) !important;
+    font-size: 19px !important;
+    border: none !important;
+    font-weight: 500 !important;
+    width: 170px;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn i {
+    margin-right: 10px !important;
+    font-size: 30px !important;
+}
+
+.content p {
+    color: #212121;
+    font-size: 19px;
+}
+
+div .table-responsive {
+    padding-top: 15px !important;
+}
+
+.fa-stack {
+    font-size: 25px;
+}
+
+.gradient {
+    background: -webkit-linear-gradient(right, #76347a, #db497d);
+	-webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    
+}
+/* END OF FORMS */
+
+
+/*MEDIA QUERIES*/
+/* Larger than normal laptop sizes */
+@media screen and (min-width: 1600px) {
+
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 993px) {
+
+    .whole {
+        margin: 4% 10%;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* COL M stops here */
+@media only screen and (max-width: 992px) and (min-width: 959px) {
+
+    .whole {
+        margin: 4% 10%;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+
+    .whole {
+        margin: 10% 10%;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .whole {
+        margin: 3% 5%;
+    }
+
+    h1 {
+        padding-bottom: 30px;
+    }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+
+
+}
+
+/* Mobile Portrait Size iphone 5 */
+@media only screen and (max-width: 319px) {
+  
+
+    
+}
+/*END OF MEDIA QUERIES*/
