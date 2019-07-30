@@ -24,6 +24,9 @@
     <!--Import Bootstrap CSS-->
     <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" media="screen,projection" />
 
+    <!-- Tour CSS -->
+    {% block tourcss %}{% endblock tourcss %}        
+
     <!-- Fontawesome -->
     <link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet">
 
@@ -40,7 +43,7 @@
     <h1 class="julius text-white">SYNTHETICA</h1>
 
     <div class="window my-auto mx-auto">
-        <section>
+        <section class="d-inline-block" style="width: 100% !important">
             
         {% block windowname %}{% endblock windowname %}
                 
@@ -74,7 +77,10 @@
 <!-- Bootstrap JS -->
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 
-<!-- JavaScript -->
+<!-- Tour JS -->
+{% block tourjs %}{% endblock tourjs %}
+    
+<!-- Custom JavaScript -->
 {% block customjs %} {% endblock customjs %}
 
 </body>

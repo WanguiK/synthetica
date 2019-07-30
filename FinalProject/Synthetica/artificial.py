@@ -67,3 +67,8 @@ def generate(s, m):
     dataset_circus = build_circus()
     table = create_student_population(dataset_circus, s, m)
     return table
+
+
+# meta = 
+# opt = meta[i][2].replace(' ','')
+# opt = opt.split (",")

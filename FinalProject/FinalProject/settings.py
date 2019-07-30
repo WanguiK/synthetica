@@ -25,9 +25,9 @@ SECRET_KEY = 'io4azwc4&q@=cp03#q#s91-fse=1powwlk&ka%gfxmfc)s!y=7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'syntheticaa.herokuapp.com'
-]
+ALLOWED_HOSTS = ['127.0.0.1','syntheticaa.herokuapp.com']
+
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -130,3 +130,5 @@ STATICFILES_DIRS = (
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

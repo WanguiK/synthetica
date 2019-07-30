@@ -53,7 +53,7 @@ html, body {
 h1 {
     text-shadow: 4px 2px 5px #000000;
     font-size: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 .whole {
@@ -63,9 +63,10 @@ h1 {
 }
 
 .window {
-    height: 710px;
+    height: 80vh;
     border-radius: 8px;
     background-color: #f5f5f5;
+    padding-bottom: 1.2em;
 }
 
 .window section {
@@ -75,6 +76,11 @@ h1 {
     background-image: linear-gradient(to left, #76347a, #76347a, #db497d);
 }
 
+.window section #help {
+    font-size: 22px !important;
+    background: transparent !important;
+}
+
 .content {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -82,7 +88,7 @@ h1 {
     padding-bottom: 1.2em;
     overflow: scroll;
     overflow-x: hidden;
-    max-height: 595px;
+    max-height: 66vh;
 }
 
 
@@ -131,6 +137,13 @@ a.add-row {
 	-webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     
+}
+
+.instruction {
+    padding-top: 5px;
+    color: #76347a;
+    font-size: 17px;
+    font-weight: 500;
 }
 /* END OF FORMS */
 

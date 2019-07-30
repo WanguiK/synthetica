@@ -1,7 +1,5 @@
-./Synthetica/__pycache__
-./Final_Project/__pycache__
-./staticfiles
-./db.sqlite3
-./.vscode
-./.git
-./.gitignore
+.vscode
+FinalProject/FinalProject/__pycache__
+FinalProject/Synthetica/__pycache__
+FinalProject/db.sqlite3
+FinalProject/.git

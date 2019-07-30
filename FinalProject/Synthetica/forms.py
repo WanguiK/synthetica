@@ -23,7 +23,7 @@ GenerateFormSet = inlineformset_factory(
     Project, Generate, 
     form=GenerateForm, 
     can_delete=True, 
-    extra=2,
+    extra=1,
     widgets={
         'field_name': TextInput(
             attrs={'class':'form-control lato form-control-lg'}

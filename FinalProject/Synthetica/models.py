@@ -66,13 +66,13 @@ class Generate(models.Model):
         'Data Type',
         max_length = 10,
         choices = DATA_TYPES,
-        blank = True,
+        blank = False,
         default = 'sex',
     )
 
     field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
     
-    options = models.TextField('Options', max_length=100, blank=True, default='Male, Female')
+    options = models.TextField('Options', max_length=100, blank=False, default='Male, Female')
 
     # def get_absolute_url(self):
     #     return reverse('generate', args=[str(self.id)])
