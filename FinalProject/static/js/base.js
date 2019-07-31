@@ -37,9 +37,9 @@ $(document).ready(function () {
     var choices = ['sex', 'address', 'pstatus', 'mjob', 'fjob','guardian', 'famsize', 'reason', 'schoolsup', 'famsup','activities', 'paidclass', 'internet'];
 
     $('tbody').on('change', 'tr td select', function() { 
-        title = $(this).find('option:selected').text();
+        // title = $(this).find('option:selected').text();
         data_type = $(this).find('option:selected').val();
-        $(this).parent().parent().find('input[type=text]').val(title);
+        $(this).parent().parent().find('input[type=text]').val(data_type);
         if (choices.includes(data_type)) {
             guide = 'Input text values separated by commas<br><span>Example:<strong> yes,no,maybe</strong></span>';
             $(this).parent().parent().find('.instruction').html(guide);

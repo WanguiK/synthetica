@@ -72,7 +72,7 @@ class Generate(models.Model):
 
     field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
     
-    options = models.TextField('Options', max_length=100, blank=False, default='Male, Female')
+    options = models.TextField('Options', max_length=250, blank=False, default='Male, Female')
 
     # def get_absolute_url(self):
     #     return reverse('generate', args=[str(self.id)])
