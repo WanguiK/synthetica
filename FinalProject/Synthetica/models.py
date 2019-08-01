@@ -21,7 +21,6 @@ class Project(models.Model):
         return f'{self.id} ({self.project_name})'
 
     def get_absolute_url(self):
-        # return reverse('workspace')
         return reverse('generate', args=[str(self.id)])
 
 
@@ -57,9 +56,7 @@ class Generate(models.Model):
         ('dalc', 'Workday Alcohol'),
         ('health', 'Health'),
         ('absences', 'Absences'),
-        ('g1', 'G1'),
-        ('g2', 'G2'),
-        ('g3', 'G3')
+        ('mean', 'Mean')
     )
 
     data_type = models.CharField(
@@ -73,9 +70,6 @@ class Generate(models.Model):
     field_name = models.CharField('Field Name', max_length=100, blank=False, default='Field#')
     
     options = models.TextField('Options', max_length=250, blank=False, default='Male, Female')
-
-    # def get_absolute_url(self):
-    #     return reverse('generate', args=[str(self.id)])
 
     def __str__(self):
         return str(self.id)

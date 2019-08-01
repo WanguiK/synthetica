@@ -13,7 +13,7 @@ util_functions.setup_logging()
 logging.info("building student dataset")
 
 
-randint = ['age', 'medu', 'fedu', 'famrel', 'traveltime', 'studytime', 'failures', 'freetime', 'walc', 'dalc', 'health', 'absences', 'g1', 'g2', 'g3']
+randint = ['age', 'medu', 'fedu', 'famrel', 'traveltime', 'studytime', 'failures', 'freetime', 'walc', 'dalc', 'health', 'absences', 'mean']
 choices = ['sex', 'address', 'pstatus', 'mjob', 'fjob','guardian', 'famsize', 'reason', 'schoolsup', 'famsup','activities', 'paidclass', 'internet']
 
 def build_circus():
@@ -52,7 +52,7 @@ def create_student_population(the_circus, size, metadata = []):
             name = NumpyRandomGenerator(
                 method = "randint",
                 low = min(opt), 
-                high = max(opt),
+                high = max(opt)+1,
                 seed = next(the_circus.seeder)
             )
         student.create_attribute(title, init_gen = name)
@@ -67,8 +67,3 @@ def generate(s, m):
     dataset_circus = build_circus()
     table = create_student_population(dataset_circus, s, m)
     return table
-
-
-# meta = 
-# opt = meta[i][2].replace(' ','')
-# opt = opt.split (",")
